@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda CR-V EXL 2012 - Venda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      text-align: center;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .price-location {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .carousel img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 20px;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feature img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .expandable {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .expandable-content {
+      display: none;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .whatsapp {
+      display: block;
+      text-align: center;
+      margin: 20px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Honda CR-V EXL 2012 - Venda Particular</h1>
+  </div>
+
+  <!-- Preço e Localização -->
+  <div class="price-location">
+    <h2>R$ 72.000</h2>
+    <p>Florianópolis, SC - Contato: João Silva</p>
+  </div>
+
+  <!-- Carrossel -->
+  <div class="carousel">
+    <img src="foto1.jpg" alt="Honda CR-V - Foto 1">
+    <img src="foto2.jpg" alt="Honda CR-V - Foto 2">
+    <img src="foto3.jpg" alt="Honda CR-V - Foto 3">
+  </div>
+
+  <!-- Características -->
+  <div class="features">
+    <div class="feature">
+      <img src="calendar-icon.png" alt="Ano">
+      <span>2012/2012</span>
+    </div>
+    <div class="feature">
+      <img src="odometer-icon.png" alt="Quilometragem">
+      <span>153.000 KM</span>
+    </div>
+    <div class="feature">
+      <img src="gearbox-icon.png" alt="Câmbio">
+      <span>Automático</span>
+    </div>
+    <div class="feature">
+      <img src="fuel-icon.png" alt="Combustível">
+      <span>Gasolina</span>
+    </div>
+    <div class="feature">
+      <img src="color-icon.png" alt="Cor">
+      <span>Prata</span>
+    </div>
+    <div class="feature">
+      <img src="license-icon.png" alt="Final da Placa">
+      <span>Final 9</span>
+    </div>
+  </div>
+
+  <!-- Caixa Expansível -->
+  <div class="expandable">
+    <a href="#" onclick="toggleContent()">Clique aqui para mais detalhes</a>
+    <div class="expandable-content" id="more-info">
+      <p>O carro está em excelente estado de conservação, com pneus novos e revisões em dia. Possui bancos de couro, ar-condicionado digital e direção elétrica. Sem detalhes de funilaria ou pintura.</p>
+    </div>
+  </div>
+
+  <!-- Botão do WhatsApp -->
+  <a class="whatsapp" href="https://wa.me/5511999999999?text=Olá, tenho interesse no Honda CR-V!">Entre em Contato pelo WhatsApp</a>
+
+  <script>
+    function toggleContent() {
+      const content = document.getElementById('more-info');
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
