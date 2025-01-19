@@ -9,70 +9,67 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       background-color: #f9f9f9;
     }
 
     .header {
-       background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
+      text-align: center;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
     }
 
-     .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
     .price-location {
-      text-align: left;
+      text-align: center;
       margin: 10px 0;
     }
 
     .carousel {
       display: flex;
-            overflow-x: scroll;
-            scroll-behavior: smooth;
-            gap: 10px;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
     }
 
-   .carousel img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
+    .carousel img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
     }
 
-    .caracteristicas {
-       display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            gap: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 20px;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .caracteristica {
-     flex: 1 1 calc(50% - 10px);
-            display: flex;
-            align-items: center;
-            font-size: 14px;
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    .caracteristica img {
-     width: 24px;
-            height: 24px;
-            margin-right: 10px;
+    .feature img {
+      width: 24px;
+      height: 24px;
     }
 
     .expandable {
       margin: 20px;
       text-align: center;
-    
+    }
+
+    .expandable-content {
+      display: none;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .whatsapp {
@@ -87,7 +84,7 @@
     }
 
     @media (max-width: 768px) {
-      .caracteristicas {
+      .features {
         grid-template-columns: 1fr 1fr;
       }
     }
@@ -101,46 +98,42 @@
   <!-- Preço e Localização -->
   <div class="price-location">
     <h2>R$ 72.000</h2>
-    <p>Tubarão/SC - Contato: Joel</p>
+    <p>Florianópolis, SC - Contato: João Silva</p>
   </div>
 
   <!-- Carrossel -->
- <div class="carousel">
-        <img src="Frente_Lateral_Motorista.jpeg" alt="Honda CR-V frente">
-        <img src="Frente.jpeg" alt="Honda CR-V lateral">
-        <img src="Traseira_Lateral_Motorista.jpeg" alt="Interior do Honda CR-V">
-        <img src="Traseira_Lateral_Carona.jpeg" alt="Honda CR-V traseira">
-        <img src="Frente.jpeg" alt="Honda CR-V traseira">
-        <img src="Interna_Motorista.jpeg" alt="Honda CR-V traseira">
-        <img src="Interna_Visão_Fundo.jpeg" alt="Honda CR-V traseira">
+  <div class="carousel">
+    <img src="foto1.jpg" alt="Honda CR-V - Foto 1">
+    <img src="foto2.jpg" alt="Honda CR-V - Foto 2">
+    <img src="foto3.jpg" alt="Honda CR-V - Foto 3">
   </div>
 
   <!-- Características -->
-  <div class="caracteristicas">
-        <div class="caracteristica">
-            <img src="calendar.png" alt="Ícone Ano/Modelo">
-            <span>2012/2012</span>
-        </div>
-        <div class="caracteristica">
-            <img src="speedometer.svg" alt="Ícone Quilometragem - KM">
-            <span>153.000 KM</span>
-        </div>
-        <div class="caracteristica">
-            <img src="gearshift.png" alt="Ícone Câmbio">
-            <span>Automático</span>
-        </div>
-        <div class="caracteristica">
-            <img src="gas-station.png" alt="Ícone Combustível">
-            <span>Gasolina</span>
-        </div>
-        <div class="caracteristica">
-            <img src="car-painting.png" alt="Cor">
-            <span>Prata</span>
-        </div>
-        <div class="caracteristica">
-            <img src="license-plate.png" alt="Placa">
-            <span>Final 9</span>
-        </div>
+  <div class="features">
+    <div class="feature">
+      <img src="calendar-icon.png" alt="Ano">
+      <span>2012/2012</span>
+    </div>
+    <div class="feature">
+      <img src="odometer-icon.png" alt="Quilometragem">
+      <span>153.000 KM</span>
+    </div>
+    <div class="feature">
+      <img src="gearbox-icon.png" alt="Câmbio">
+      <span>Automático</span>
+    </div>
+    <div class="feature">
+      <img src="fuel-icon.png" alt="Combustível">
+      <span>Gasolina</span>
+    </div>
+    <div class="feature">
+      <img src="color-icon.png" alt="Cor">
+      <span>Prata</span>
+    </div>
+    <div class="feature">
+      <img src="license-icon.png" alt="Final da Placa">
+      <span>Final 9</span>
+    </div>
   </div>
 
   <!-- Caixa Expansível -->
@@ -152,7 +145,7 @@
   </div>
 
   <!-- Botão do WhatsApp -->
-  <a class="whatsapp" href="https://wa.me/554899949-5056?text=Olá, tenho interesse no Honda CR-V!">Entre em Contato pelo WhatsApp</a>
+  <a class="whatsapp" href="https://wa.me/5511999999999?text=Olá, tenho interesse no Honda CR-V!">Entre em Contato pelo WhatsApp</a>
 
   <script>
     function toggleContent() {
