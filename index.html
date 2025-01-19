@@ -37,7 +37,7 @@
       border-radius: 8px;
     }
 
-    .features {
+    .caracteristicas {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 10px;
@@ -48,13 +48,13 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .feature {
+    .caracteristica {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .feature img {
+    .caracteristica img {
       width: 24px;
       height: 24px;
     }
@@ -84,7 +84,7 @@
     }
 
     @media (max-width: 768px) {
-      .features {
+      .caracteristicas {
         grid-template-columns: 1fr 1fr;
       }
     }
@@ -102,38 +102,42 @@
   </div>
 
   <!-- Carrossel -->
-  <div class="carousel">
-    <img src="foto1.jpg" alt="Honda CR-V - Foto 1">
-    <img src="foto2.jpg" alt="Honda CR-V - Foto 2">
-    <img src="foto3.jpg" alt="Honda CR-V - Foto 3">
+ <div class="carousel">
+        <img src="Frente_Lateral_Motorista.jpeg" alt="Honda CR-V frente">
+        <img src="Frente.jpeg" alt="Honda CR-V lateral">
+        <img src="Traseira_Lateral_Motorista.jpeg" alt="Interior do Honda CR-V">
+        <img src="Traseira_Lateral_Carona.jpeg" alt="Honda CR-V traseira">
+        <img src="Frente.jpeg" alt="Honda CR-V traseira">
+        <img src="Interna_Motorista.jpeg" alt="Honda CR-V traseira">
+        <img src="Interna_Visão_Fundo.jpeg" alt="Honda CR-V traseira">
   </div>
 
   <!-- Características -->
-  <div class="features">
-    <div class="feature">
-      <img src="calendar-icon.png" alt="Ano">
-      <span>2012/2012</span>
-    </div>
-    <div class="feature">
-      <img src="odometer-icon.png" alt="Quilometragem">
-      <span>153.000 KM</span>
-    </div>
-    <div class="feature">
-      <img src="gearbox-icon.png" alt="Câmbio">
-      <span>Automático</span>
-    </div>
-    <div class="feature">
-      <img src="fuel-icon.png" alt="Combustível">
-      <span>Gasolina</span>
-    </div>
-    <div class="feature">
-      <img src="color-icon.png" alt="Cor">
-      <span>Prata</span>
-    </div>
-    <div class="feature">
-      <img src="license-icon.png" alt="Final da Placa">
-      <span>Final 9</span>
-    </div>
+  <div class="caracteristicas">
+        <div class="caracteristica">
+            <img src="calendar.png" alt="Ícone Ano/Modelo">
+            <span>2012/2012</span>
+        </div>
+        <div class="caracteristica">
+            <img src="speedometer.svg" alt="Ícone Quilometragem - KM">
+            <span>153.000 KM</span>
+        </div>
+        <div class="caracteristica">
+            <img src="gearshift.png" alt="Ícone Câmbio">
+            <span>Automático</span>
+        </div>
+        <div class="caracteristica">
+            <img src="gas-station.png" alt="Ícone Combustível">
+            <span>Gasolina</span>
+        </div>
+        <div class="caracteristica">
+            <img src="car-painting.png" alt="Cor">
+            <span>Prata</span>
+        </div>
+        <div class="caracteristica">
+            <img src="license-plate.png" alt="Placa">
+            <span>Final 9</span>
+        </div>
   </div>
 
   <!-- Caixa Expansível -->
@@ -145,7 +149,7 @@
   </div>
 
   <!-- Botão do WhatsApp -->
-  <a class="whatsapp" href="https://wa.me/5511999999999?text=Olá, tenho interesse no Honda CR-V!">Entre em Contato pelo WhatsApp</a>
+  <a class="whatsapp" href="https://wa.me/554899949-5056?text=Olá, tenho interesse no Honda CR-V!">Entre em Contato pelo WhatsApp</a>
 
   <script>
     function toggleContent() {
